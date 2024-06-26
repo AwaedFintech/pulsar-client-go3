@@ -19,6 +19,7 @@ package pulsar
 
 import (
 	"context"
+	"errors"
 	"strconv"
 	"sync/atomic"
 	"time"
@@ -106,6 +107,10 @@ func (tc *transactionCoordinatorClient) newTransaction(timeout time.Duration) (*
 	if err := tc.canSendRequest(); err != nil {
 		return nil, err
 	}
+
+	// TODO: wait fix
+	defer tc.semaphore.Release()
+
 	requestID := tc.client.rpcClient.NewRequestID()
 	nextTcID := tc.nextTCNumber()
 	cmdNewTxn := &pb.CommandNewTxn{
@@ -115,9 +120,31 @@ func (tc *transactionCoordinatorClient) newTransaction(timeout time.Duration) (*
 	}
 
 	res, err := tc.client.rpcClient.RequestOnCnx(tc.cons[nextTcID], requestID, pb.BaseCommand_NEW_TXN, cmdNewTxn)
-	tc.semaphore.Release()
 	if err != nil {
-		return nil, err
+		if !errors.Is(err, internal.ErrConnectionClosed) {
+			return nil, err
+		}
+
+		tc.close()
+		if tc.start() != nil {
+			return nil, err
+		}
+
+		requestID := tc.client.rpcClient.NewRequestID()
+		nextTcID := tc.nextTCNumber()
+		cmdNewTxn := &pb.CommandNewTxn{
+			RequestId:     proto.Uint64(requestID),
+			TcId:          proto.Uint64(nextTcID),
+			TxnTtlSeconds: proto.Uint64(uint64(timeout.Milliseconds())),
+		}
+
+		res, err = tc.client.rpcClient.RequestOnCnx(tc.cons[nextTcID], requestID, pb.BaseCommand_NEW_TXN, cmdNewTxn)
+		if err != nil {
+			return nil, err
+		} else if res.Response.NewTxnResponse.Error != nil {
+			return nil, getErrorFromServerError(res.Response.NewTxnResponse.Error)
+		}
+
 	} else if res.Response.NewTxnResponse.Error != nil {
 		return nil, getErrorFromServerError(res.Response.NewTxnResponse.Error)
 	}
