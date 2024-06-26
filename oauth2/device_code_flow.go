@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/apache/pulsar-client-go/oauth2/clock"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2/clock"
 
 	"github.com/pkg/errors"
 )

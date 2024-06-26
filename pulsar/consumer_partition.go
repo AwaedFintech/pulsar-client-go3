@@ -28,12 +28,12 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/apache/pulsar-client-go/pulsar/crypto"
-	"github.com/apache/pulsar-client-go/pulsar/internal"
-	"github.com/apache/pulsar-client-go/pulsar/internal/compression"
-	cryptointernal "github.com/apache/pulsar-client-go/pulsar/internal/crypto"
-	pb "github.com/apache/pulsar-client-go/pulsar/internal/pulsar_proto"
-	"github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/crypto"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/internal"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/internal/compression"
+	cryptointernal "github.com/AwaedFintech/pulsar-client-go3/pulsar/internal/crypto"
+	pb "github.com/AwaedFintech/pulsar-client-go3/pulsar/internal/pulsar_proto"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 	"github.com/bits-and-blooms/bitset"
 	"github.com/pkg/errors"
 

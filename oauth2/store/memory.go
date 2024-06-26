@@ -20,8 +20,8 @@ package store
 import (
 	"sync"
 
-	"github.com/apache/pulsar-client-go/oauth2"
-	"github.com/apache/pulsar-client-go/oauth2/clock"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2/clock"
 )
 
 type MemoryStore struct {

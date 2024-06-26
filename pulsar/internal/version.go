@@ -24,7 +24,7 @@ import (
 )
 
 const (
-	pulsarClientGoModulePath = "github.com/apache/pulsar-client-go"
+	pulsarClientGoModulePath = "github.com/AwaedFintech/pulsar-client-go3"
 )
 
 var (

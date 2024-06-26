@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar"
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/admin/config"
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/utils"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/admin/config"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )
 

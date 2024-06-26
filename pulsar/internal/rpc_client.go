@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar/auth"
-	"github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/auth"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 
-	pb "github.com/apache/pulsar-client-go/pulsar/internal/pulsar_proto"
+	pb "github.com/AwaedFintech/pulsar-client-go3/pulsar/internal/pulsar_proto"
 	"google.golang.org/protobuf/proto"
 )
 

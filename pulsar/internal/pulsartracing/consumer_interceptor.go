@@ -20,7 +20,7 @@ package pulsartracing
 import (
 	"context"
 
-	"github.com/apache/pulsar-client-go/pulsar"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar"
 	"github.com/opentracing/opentracing-go"
 )
 

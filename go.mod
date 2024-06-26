@@ -1,4 +1,4 @@
-module github.com/apache/pulsar-client-go
+module github.com/AwaedFintech/pulsar-client-go3
 
 go 1.18
 

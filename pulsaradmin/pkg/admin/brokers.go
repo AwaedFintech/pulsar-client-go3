@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/utils"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/utils"
 )
 
 // Brokers is admin interface for brokers management

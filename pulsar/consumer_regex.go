@@ -28,8 +28,8 @@ import (
 
 	pkgerrors "github.com/pkg/errors"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal"
-	"github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/internal"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 )
 
 const (

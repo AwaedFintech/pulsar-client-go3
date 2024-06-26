@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar/auth"
-	"github.com/apache/pulsar-client-go/pulsar/internal"
-	"github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/auth"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/internal"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 )

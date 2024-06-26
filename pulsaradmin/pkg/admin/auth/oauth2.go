@@ -23,13 +23,13 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/utils"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/utils"
 
 	"github.com/99designs/keyring"
-	"github.com/apache/pulsar-client-go/oauth2"
-	"github.com/apache/pulsar-client-go/oauth2/cache"
-	clock2 "github.com/apache/pulsar-client-go/oauth2/clock"
-	"github.com/apache/pulsar-client-go/oauth2/store"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2/cache"
+	clock2 "github.com/AwaedFintech/pulsar-client-go3/oauth2/clock"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2/store"
 	"github.com/pkg/errors"
 	xoauth2 "golang.org/x/oauth2"
 )

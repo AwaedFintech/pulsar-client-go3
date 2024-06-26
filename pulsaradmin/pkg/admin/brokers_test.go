@@ -24,10 +24,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/admin/auth"
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/admin/config"
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/rest"
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/utils"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/admin/auth"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/admin/config"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/rest"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )
 

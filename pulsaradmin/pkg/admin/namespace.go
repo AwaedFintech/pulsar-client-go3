@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/utils"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/utils"
 )
 
 // Namespaces is admin interface for namespaces management

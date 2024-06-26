@@ -32,13 +32,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal"
-	pb "github.com/apache/pulsar-client-go/pulsar/internal/pulsar_proto"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/internal"
+	pb "github.com/AwaedFintech/pulsar-client-go3/pulsar/internal/pulsar_proto"
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/apache/pulsar-client-go/pulsar/crypto"
-	plog "github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/crypto"
+	plog "github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 )
 
 func TestInvalidURL(t *testing.T) {

@@ -29,9 +29,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar/auth"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/auth"
 
-	"github.com/apache/pulsar-client-go/pulsar/log"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsar/log"
 
 	"github.com/pkg/errors"
 )

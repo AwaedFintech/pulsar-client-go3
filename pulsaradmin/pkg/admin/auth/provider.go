@@ -20,9 +20,9 @@ package auth
 import (
 	"net/http"
 
-	"github.com/apache/pulsar-client-go/oauth2"
+	"github.com/AwaedFintech/pulsar-client-go3/oauth2"
 
-	"github.com/apache/pulsar-client-go/pulsaradmin/pkg/admin/config"
+	"github.com/AwaedFintech/pulsar-client-go3/pulsaradmin/pkg/admin/config"
 )
 
 // Provider provide a general method to add auth message
